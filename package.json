@@ -1,11 +1,15 @@
 {
   "name": "jwt-koa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "author": "VamOSGS",
   "scripts": {
     "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VamOSGS/jwt-koa.git"
   },
   "bugs": {
     "url": "https://github.com/VamOSGS/jwt-koa/issues"
