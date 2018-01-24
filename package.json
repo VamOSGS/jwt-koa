@@ -1,10 +1,14 @@
 {
-  "name": "koa-jwt-middleware",
+  "name": "jwt-koa",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": "VamOSGS",
   "scripts": {
     "dev": "nodemon index"
+  },
+  "bugs": {
+    "url": "https://github.com/VamOSGS/jwt-koa/issues"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
