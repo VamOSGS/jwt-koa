@@ -1,28 +1,28 @@
 {
-  "name": "jwt-koa",
-  "version": "1.0.5",
-  "main": "index.js",
-  "license": "MIT",
-  "author": "VamOSGS",
-  "scripts": {
-    "dev": "nodemon index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/VamOSGS/jwt-koa.git"
-  },
-  "bugs": {
-    "url": "https://github.com/VamOSGS/jwt-koa/issues"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "koa": "^2.4.1",
-    "koa-router": "^7.3.0",
-    "nodemon": "^1.14.11"
-  },
-  "dependencies": {
-    "jsonwebtoken": "^8.1.0"
-  }
+    "name": "jwt-koa",
+    "version": "1.0.5",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "VamOSGS",
+    "scripts": {
+        "dev": "nodemon index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VamOSGS/jwt-koa.git"
+    },
+    "bugs": {
+        "url": "https://github.com/VamOSGS/jwt-koa/issues"
+    },
+    "devDependencies": {
+        "eslint": "^4.16.0",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-import": "^2.8.0",
+        "koa": "^2.4.1",
+        "koa-router": "^7.3.0",
+        "nodemon": "^1.14.11"
+    },
+    "dependencies": {
+        "jsonwebtoken": "^8.1.0"
+    }
 }
