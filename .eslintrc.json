@@ -8,7 +8,9 @@
     },
     "rules": {
         "indent": ["error", 4],
+        "no-undef": "off",
         "no-console": "off",
+        "import/no-extraneous-dependencies": "off",
         "no-unused-vars": "warn",
         "import/no-dynamic-require": "off",
         "linebreak-style": "off"
