@@ -1,0 +1,16 @@
+{
+    "extends": "airbnb-base",
+    "globals": {
+        "global": true
+    },
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "no-console": "off",
+        "no-unused-vars": "warn",
+        "import/no-dynamic-require": "off",
+        "linebreak-style": "off"
+    }
+}
