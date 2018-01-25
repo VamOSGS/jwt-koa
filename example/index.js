@@ -1,7 +1,6 @@
-const jwtKoa = require('../index');
+const jwt = require('../index');
 const Koa = require('koa');
 const Router = require('koa-router');
-const jwt = require('jsonwebtoken');
 
 const app = new Koa();
 const notSecuredRouter = new Router();
@@ -17,13 +16,11 @@ notSecuredRouter.get('/notsecured', async (ctx) => {
 });
 
 notSecuredRouter.post('/send', async (ctx) => {
-    const token = jwt.sign({ data: 'DATA' }, process.env.secret, {
-        expiresIn: 3000,
-    });
+    const token = jwt.createToken({ tokenData: 'tokenData' });
     ctx.response.body = token;
 });
 
-securedRouter.use(jwtKoa);
+securedRouter.use(jwt.middleware);
 securedRouter.get('/secured', async (ctx) => {
     ctx.body = 'Secured Data';
 });

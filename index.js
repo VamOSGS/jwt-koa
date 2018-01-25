@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const { secret } = process.env;
-module.exports = async (ctx, next) => {
+exports.middleware = async (ctx, next) => {
     const token = ctx.request.body.token || ctx.headers.authorization;
     if (token) {
         jwt.verify(token, secret, (err) => {
@@ -19,3 +19,8 @@ module.exports = async (ctx, next) => {
         };
     }
 };
+
+exports.createToken = (data, expiresIn = 3000) =>
+    jwt.sign(data, secret, {
+        expiresIn,
+    });
