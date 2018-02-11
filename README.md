@@ -35,10 +35,7 @@ const jwtKoa = require('jwt-koa');
 #### Set secret key for JWT
 
 ```js
-if (process.env.NODE_ENV !== 'production') require('dotenv').config();
-
-const { SECRET } = process.env;
-
+process.env.SECRET = 'secret';
 ```
 
 #### Set middleware to secured Router

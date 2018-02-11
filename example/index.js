@@ -5,10 +5,8 @@ const Router = require('koa-router');
 const app = new Koa();
 const notSecuredRouter = new Router();
 const securedRouter = new Router();
-if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
-const { SECRET } = process.env;
-
+process.env.SECRET = 'secret';
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });
